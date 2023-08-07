@@ -1,14 +1,51 @@
+*{
+    border: 1px solid black;
+    
+} 
+ 
  body{
-background-image: url(./images/background.jpg);
+/* background-image: url(./images/background.jpg); */
 opacity: 1;
 background-repeat: no-repeat;
 width: 100%;
-background-color: rgba(0,0,0,0.6);
+
 }
+
 
 .heading{
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: red;
+    padding: 200px;
 
 }
 
+.test {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    
+
+}
+
+
+.one{
+    background-color: aquamarine;
+
+    flex:initial;
+}
+
+.two{
+    background-color: azure;
+    flex:initial ;
+}
+
+.three{
+    background-color: blanchedalmond;
+    flex: initial ;
+}
+
+@media (min-width:750px) {
+    .test{
+        flex-direction: row;
+    }
+}
